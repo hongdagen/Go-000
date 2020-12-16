@@ -1,0 +1,11 @@
+syntax = "proto3";
+package v1;
+service OrderSaveService {
+  rpc OrderSave(OrderRequest) returns (OrderResponse) {}
+}
+message OrderRequest {
+  int64 orderId = 1;
+}
+message OrderResponse {
+  int64 orderId = 1;
+}
